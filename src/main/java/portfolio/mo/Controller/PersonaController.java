@@ -2,7 +2,6 @@ package portfolio.mo.Controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +16,8 @@ import portfolio.mo.Interface.IPersonaService;
 
 
 @RestController
-@CrossOrigin(origins = "https://frondendmo.web.app/")
+@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "https://frondendmo.web.app/")
 public class PersonaController {
     @Autowired IPersonaService ipersonaService;
     
