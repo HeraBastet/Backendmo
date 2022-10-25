@@ -20,8 +20,7 @@ import portfolio.mo.Security.Controller.Mensaje;
 import portfolio.mo.Service.Shys;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
-//@CrossOrigin(origins = "https://frondendmo.web.app/")
+@CrossOrigin(origins = {"http://localhost:4200","https://frondendmo.web.app"})
 @RequestMapping("/skill")
 public class CHys {
     @Autowired
