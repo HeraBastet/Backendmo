@@ -21,7 +21,7 @@ import portfolio.mo.Service.Shys;
 
 @RestController
 @CrossOrigin(origins = {"http://localhost:4200","https://frondendmo.web.app"})
-@RequestMapping("/skill")
+@RequestMapping("/hys")
 public class CHys {
     @Autowired
     Shys shys;
