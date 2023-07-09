@@ -21,7 +21,7 @@ import portfolio.mo.Service.SExperiencia;
 
 @RestController
 @RequestMapping("/explab")
-@CrossOrigin(origins = {"http://localhost:4200","https://frondendmo.web.app"})
+@CrossOrigin(origins = "https://frondendmo.web.app")
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;
