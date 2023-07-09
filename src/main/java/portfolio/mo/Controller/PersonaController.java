@@ -19,7 +19,7 @@ import portfolio.mo.Service.ImpPersonaService;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = "https://frondendmo.web.app")
+@CrossOrigin(origins = "https://frondendmo-e71fb.web.app/")
 public class PersonaController {
     @Autowired
     ImpPersonaService personaService;
