@@ -21,7 +21,7 @@ import portfolio.mo.Service.Seducacion;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "https://frondendmo-e71fb.web.app/")
+@CrossOrigin(origins = "*")
 public class CEducacion {
     @Autowired
     Seducacion sEducacion;

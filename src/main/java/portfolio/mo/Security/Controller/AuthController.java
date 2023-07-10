@@ -30,7 +30,7 @@ import portfolio.mo.Security.jwt.JwtProvider;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "https://frondendmo-e71fb.web.app/")
+@CrossOrigin(origins = "*")
 public class AuthController {
     @Autowired
     PasswordEncoder passwordEncoder;

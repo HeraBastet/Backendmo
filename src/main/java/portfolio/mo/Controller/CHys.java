@@ -20,7 +20,7 @@ import portfolio.mo.Security.Controller.Mensaje;
 import portfolio.mo.Service.Shys;
 
 @RestController
-@CrossOrigin(origins = "https://frondendmo-e71fb.web.app/")
+@CrossOrigin(origins = "*")
 @RequestMapping("/skill")
 public class CHys {
     @Autowired
