@@ -19,7 +19,7 @@ import portfolio.mo.Service.ImpPersonaService;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE}, allowedHeaders = "*")
 public class PersonaController {
     @Autowired
     ImpPersonaService personaService;

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import portfolio.mo.Dto.dtoExperiencia;
 import portfolio.mo.Entity.Experiencia;
@@ -21,7 +22,7 @@ import portfolio.mo.Service.SExperiencia;
 
 @RestController
 @RequestMapping("/explab")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE}, allowedHeaders = "*")
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;
