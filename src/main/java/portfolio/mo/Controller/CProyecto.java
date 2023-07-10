@@ -21,7 +21,7 @@ import portfolio.mo.Service.SProyecto;
 
 @RestController
 @RequestMapping("/proyecto")
-@CrossOrigin(origins = "")
+@CrossOrigin(origins = "*")
 public class CProyecto {
     @Autowired
     SProyecto sProyecto;
